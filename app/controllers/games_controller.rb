@@ -17,8 +17,6 @@ end
 
 def check_word_in_grid(reply, letters_array)
   reply.chars.all? { |letter| reply.count(letter) <= letters_array.count(letter) }
-  # attempt_a = reply.upcase.split("")
-  # attempt_a.all? { |letter| attempt_a.count(letter) <= letters_array.count(letter) }
 end
 
 def check_word_true(reply)
@@ -53,14 +51,6 @@ def get_score(reply, letters_array)
     0
   end
 end
-
-# def run_game(attempt, grid)
-#   # TODO: runs the game and return detailed hash of result
-#   return {
-#     score: get_score(attempt, grid, start_time, end_time),
-#     message: get_custom_message(attempt, grid)
-#   }
-# end
 
 
 
